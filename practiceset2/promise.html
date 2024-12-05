@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // A promise is the situtation which is fulfilled or not.there two callbacks  that is resolve and reject.it produces a value after an asynchronous operation completes successfully,or an error if it does not complete successfully ,or an error if it does not complete successfully due to time out,network error,and so on.
+
+    //A promise object has the followimg internal properties
+    //state 
+    //1: pending-initially when the executor function starts the execution.
+
+    //2:fulfilled:when the promise is resolved
+    //3:rejected:when the promise is rejected
+    // result:
+    //undefined:intially when the state value is pending.
+    //value:when resolve(value) is called.
+    //error:when reject(error) is called.
+
+
+    // synchronous
+    // console.log("1")
+    // console.log("2")
+    // console.log("3")
+    // asynchronous
+  //  console.log("1")
+  //  setTimeout(()=>{
+  //   console.log("2")
+
+  //  },4000)
+  //  console.log("3")
+// let promise=new Promise(function(resolve,reject){
+//   let ghumna=false;
+//   if(ghumna){
+//     setTimeout(() => {
+//       resolve("manali mai bhut maje krage")
+      
+//     })
+
+
+//   }
+//   else{
+//     reject("ghr prr hi rho phir")
+//   }
+
+// });
+// promise.then((res)=>{
+//   console.log(res)
+
+// }).catch(console.error())
+
+
+// so the result is  we can do same thing by using callback.it 'in future if we have number of callbacks so it creates callback hell. beacuse in big project there are number of callback functions are used. so we promises to prevent from callback hell.
+ 
+  </script>
+  
+</body>
+</html>

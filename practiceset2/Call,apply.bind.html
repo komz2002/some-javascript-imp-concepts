@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //call
+    //as a developer it gives a power of calling same function again without writing the code of same function//
+    const person1={
+      name:"komal",
+      lastName:"sharma",
+      fullName: function(history,country){
+        return this.name + " "+this.lastName +" "+ history+" "+country+" ";
+
+      }
+    }
+    const person2={
+      name:"satya",
+      lastName:"awasthi"
+    }
+    // console.log(person1.fullName.call(person2,"mugal","india"))
+  
+    //apply
+    // the motive of apply method is same but in the little differnce is we take value only under the square braket
+    //  console.log(person1.fullName.apply(person2,["mugal","india"]));
+     //bind
+    //  bind gives a copy of function.and store it in a variable.
+
+    //  const result=person1.fullName.bind(person2,"mugal","india");
+    //  console.log(result());
+     
+
+  </script>
+  
+</body>
+</html>

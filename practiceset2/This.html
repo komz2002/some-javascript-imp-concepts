@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // by it self
+    // console.log(this)
+    //inside object method
+    // const obj={
+    //   name:"syina",
+    //   lastName:"sharma",
+    //   fullName:function (){
+    //     return this.name + " " 
+    //       +this.lastName;
+    //   }
+
+      
+    // }
+    // console.log(obj.fullName())
+    // in this case we got a global object.this takes value of object
+
+      "use strict"
+//inside function 
+function xyz(){
+
+  return this;
+}
+console.log(xyz());
+//in "use strict" case it will give a undefined
+
+
+    
+
+  </script>
+  
+</body>
+</html>
